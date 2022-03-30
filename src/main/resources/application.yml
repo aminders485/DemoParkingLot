@@ -1,0 +1,21 @@
+parking-lot:
+  four-wheeler:
+    max-capacity: 10
+
+  two-wheeler:
+    max-capacity: 20
+
+spring:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: "jdbc:mysql://127.0.0.1:3306/ParlingLot?autoreconnect=true"
+      password: "password"
+      username: "root"
+      testOnBorrow: true
+      testWhileIdle: true
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 30000
+      validationQuery: SELECT 1
+      max-active: 15
+      max-idle: 10
+      max-wait: 8000
